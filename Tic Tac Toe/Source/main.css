@@ -1,0 +1,52 @@
+
+body {
+  text-align: center;
+  font-size: 16px;
+  font-family: 'calibri', Helvetica, sans-serif;
+}
+table {
+  margin-left:auto; 
+  margin-right:auto; 
+  width: 500px;
+  -webkit-user-select: none; 
+}
+td {
+  height: 170px;
+  width: 170px;
+  text-align: center;
+  font-size: 150px;
+  border: 2px solid deepskyblue;
+  -webkit-border-radius: 10px;
+}
+#players {
+  margin-left:auto; 
+  margin-right:auto;
+  padding: 20px 10px 10px 10px;
+  width: 500px;
+  text-align: left;
+}
+#players > div {
+  display: inline-block;
+  padding-right: 25px;
+  color: black;
+  -webkit-transition-duration: 200ms;
+}
+.button {
+  float: right;
+}
+.current-player {
+  color: black !important;
+  -webkit-transform: scale(1.5);
+}
+.X-marker {
+  color: yellow;
+}
+.X-marker:before {
+  content: "X";
+}
+.O-marker {
+  color: Red;
+}
+.O-marker:before {
+  content: "O";
+}
