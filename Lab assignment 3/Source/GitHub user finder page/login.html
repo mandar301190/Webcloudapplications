@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://peyotedesign.ch/securelogin/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+
+
+        <meta name="author" content="Chris Perez - Webdesigner - www.peyotedesign.ch">
+        <meta name="description" content="Secure user login and registration">
+        <title>Secure user login and registration</title>
+        <!-- Bootstrap -->
+        <link href="./Secure user login and registration_files/bootstrap.min.css" rel="stylesheet" media="screen">
+
+        <!-- Responsive -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./Secure user login and registration_files/bootstrap-responsive.css" rel="stylesheet">
+
+        <!--Custom Styles-->
+        <link href="./Secure user login and registration_files/style.css" rel="stylesheet">
+
+        <!--Icon home Screen Touch -->
+        <link rel="apple-touch-icon-precomposed" href="http://peyotedesign.ch/securelogin/icon.png">
+
+
+    <script>var __tcjsch = !0;</script></head>
+
+
+    <body>
+
+
+
+        <div class="container-fluid" id="mainwrapper">
+            <div class="container-fluid" id="content">
+                <h1>Secure login &amp; registration form</h1>
+                <h4>secure login and registration from</h4>
+                <p>Make sure you setup your database correct as written in the settings page.</p>
+                <p><a href="http://www.peyotedesign.ch/securelogin/settings.php">Set it up!</a><br>
+                    <a href="https://github.com/elpeyotl/Secure-login-and-registration-form">Project on Github</a>
+                  </p><p>Login Form</p>
+
+                  <!--LoginForm-->
+
+     
+
+                  
+
+                <div class="row-fluid">
+                    <div class="span4 offset3">
+
+                      <form action="http://peyotedesign.ch/securelogin/secure/process_login.php" method="post" name="login_form" class="form-horizontal">
+                          <div class="control-group">
+                            <label class="control-label" for="inputEmail">Email</label>
+                            <div class="controls">
+                              <input type="text" id="email" name="email" placeholder="Email">
+                          </div>
+                      </div>
+                      <div class="control-group">
+                        <label class="control-label" for="inputPassword">Password</label>
+                        <div class="controls">
+                          <input type="password" name="password" id="password" placeholder="Password">
+                      </div>
+                  </div>
+                  <div class="control-group">
+                    <div class="controls">
+                        <button type="submit" class="btn" onclick="formhash(this.form, this.form.password);">Sign in</button>
+                            <!-- if login failed show this -->
+                               
+                    </div>
+                </div>
+            </form>
+        </div><!--/span4-->
+    </div><!--/row-fluid-->
+
+
+
+
+    <!--THE REGISTRATION FORM-->
+
+    <p>Registration Form</p>
+    <div class="row-fluid">
+        <div class="span4 offset3">
+
+         <form action="http://peyotedesign.ch/securelogin/secure/sec_reg.php" method="post" name="registration_form" class="form-horizontal">
+          <div class="control-group">
+            <label class="control-label" for="inputUser">Username</label>
+            <div class="controls">
+              <input type="text" id="username" name="username" placeholder="Username">
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="inputEmail">Email</label>
+            <div class="controls">
+              <input type="text" id="email" name="email" placeholder="Email">
+          </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label" for="inputPassword">Password</label>
+        <div class="controls">
+          <input type="password" name="password" id="password" placeholder="Password">
+          <input type="hidden" name="p" id="p" value="5200631c2059e6d4476bf9d7d865d443376bd46d21bf8c0d61bfab5f5ba0a66a75aae2286f5a104521f4ab1526fdf0562907598d5bf41be45be78221dfbee278">
+      </div>
+  </div>
+  <div class="control-group">
+    <div class="controls">
+        <button type="submit" class="btn" onclick="formhash(this.form, this.form.password, this.form.p);">Register</button>
+                          
+                    <!-- If registration successfull show everything ok info -->
+                      
+                    <!-- if registration error show this -->
+                           
+       
+    </div>
+</div>
+
+</div></form><!--/span4-->
+</div><!--/row-fluid-->
+</div>
+
+<p>Thank you wiki-how for the scripts! <a href="http://www.wikihow.com/Create-a-Secure-Login-Script-in-PHP-and-MySQL">Article</a></p><p>
+
+
+    </p><p>
+</p><ul id="circles">
+                <li class="circle"></li>
+                <li class="circle"></li>
+                <li class="circle"></li>
+                <br><a href="http://www.peyotedesign.ch/">PeyoteCode</a>
+            </ul>
+    <p></p>
+
+
+</div><!--/container-fluid-->
+</div><!--/container-fluid-->
+
+<!--Scripts-->
+<script type="text/javascript" async="" src="./Secure user login and registration_files/ga.js.download"></script><script src="./Secure user login and registration_files/jquery-1.8.2.min.js.download"></script>
+<script src="./Secure user login and registration_files/jquery-latest.js.download"></script>
+<script src="./Secure user login and registration_files/bootstrap.min.js.download"></script>
+<script src="./Secure user login and registration_files/sha512.js.download"></script>
+<script src="./Secure user login and registration_files/forms.js.download"></script>
+
+     
+   <script>
+   //FADE IN MESSAGES
+             
+        $(document).ready(function () {
+      $(".error").fadeIn("slow");
+      $("#success").fadeIn("slow");
+    });
+    </script>
+
+      <!--GOOGLE ANALYTICS-->
+    <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-38301376-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+    </script>
+
+
+</body></html>
